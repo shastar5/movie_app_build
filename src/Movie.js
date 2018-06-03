@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import LinesEllipsis from 'react-lines-ellipsis'
 import './Movie.css';
 
+
 function Movie({title, poster, genres, synopsis}){
     return (
         <div className="Movie">
@@ -28,9 +29,16 @@ function Movie({title, poster, genres, synopsis}){
     )
 }
 
+
+
 function MoviePoster({poster, alt}){
+
+    function onClickScreen(e) {
+        alert('클릭!')
+    }
+
     return (
-        <img src={poster} alt={alt} title={alt} className="Movie__Poster" />
+        <img src={poster} alt={alt} title={alt} className="Movie__Poster" onClickCapture={onClickScreen}/>
     )
 }
 

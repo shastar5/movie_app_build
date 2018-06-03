@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
 import Movie from "./Movie";
+import Cookies from 'universal-cookie';
 
+const cookies = new Cookies();
 class App extends Component {
     state = {};
 
+
     componentDidMount() {
+        var input = prompt('Name?');
+        var count = cookies.get(input);
+        if (isNaN(count)) {
+            count = 0;
+        }
+        cookies.set(input, ++count, {path:'/'});
+        alert('안녕하세요! ' + input + '\n' + count + '번째 방문 환영합니다');
         this._getMovies();
     }
 

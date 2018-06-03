@@ -10,7 +10,8 @@
     "react-dom": "^16.4.0",
     "react-lines-ellipsis": "^0.10.3",
     "react-scripts": "1.1.4",
-    "webpack": "^4.10.2"
+    "universal-cookie": "^2.1.5",
+    "webpack": "^3.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
