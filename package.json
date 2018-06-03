@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-lines-ellipsis": "^0.10.3",
+    "react-scripts": "1.1.4",
+    "webpack": "^4.10.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "homepage": "http://localhost/",
+  "devDependencies": {
+    "webpack-cli": "^3.0.1"
   }
 }
